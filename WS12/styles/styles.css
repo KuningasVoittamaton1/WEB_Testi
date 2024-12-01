@@ -1,7 +1,29 @@
-.container {
-    padding-top: 100px;
+
+
+
+header {
+    padding-top: auto  ;
+    padding-bottom: auto;
+    color: rgb(0, 0, 0);
+    clear: left;
     text-align: center;
-    height: 500px;
-    width: 500px;
+  }
+footer {
+    padding-top: 500px;
+    padding-bottom: 30px;
+    text-align: center;
+
 }
 
+  .container{
+    text-align: center;
+  }
+
+  .carousel-inner{
+    text-align: center;
+    
+    }
+
+.body{
+    padding-top: 100px;
+}
