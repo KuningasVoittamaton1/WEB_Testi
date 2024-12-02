@@ -9,10 +9,16 @@ header {
     text-align: center;
   }
 footer {
-    padding-top: 500px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     text-align: center;
 
+}
+
+
+.tekstikenttä{
+  text-align: left;
+  padding: auto;
 }
 
   .container{
@@ -26,4 +32,47 @@ footer {
 
 .body{
     padding-top: 100px;
+}
+
+.contact{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.about{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.hero{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.gallery{
+  text-align: center;
+  }
+
+.galleria-uusi{
+  text-align: center;
+  text-shadow: 5px 5px 5px;
+}
+
+.row {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
