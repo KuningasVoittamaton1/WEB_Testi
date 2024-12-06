@@ -14,7 +14,7 @@ footer {
 }
 /* Hero Section */
 .hero-section {
-  background: url("/chatgpt/images/car_background.avif") no-repeat center
+  background: url("/chatgpt/images/car_background.jpg") no-repeat center
     center/cover;
   height: 50vh;
   display: flex;
