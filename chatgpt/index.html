@@ -1,92 +1,160 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoMaailma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="./images/AutoMaailmaLogo_rounded.png" alt="AutoMaailma Logo" width="60" height="40" class="me-2">
-            <a class="navbar-brand" href="index.html">AutoMaailma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Etusivu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Tietoa Meistä</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Ota Yhteyttä</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Galleria</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <!-- Clickable logo linking to index.html -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./images/AutoMaailmaLogo_rounded.png"
+            alt="AutoMaailma Logo"
+            style="height: 60px; width: 100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tietoa Meistä</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Ota Yhteyttä</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galleria</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Cool Header -->
     <div class="hero-section">
-        <div class="text-center">
-            <h1>Tervetuloa AutoMaailmaan!</h1>
-            <p>Paikka auto intoilijoille</p>
-        </div>
+      <div class="text-center">
+        <h1>Tervetuloa <br />AutoMaailmaan</h1>
+        <p>Paikka auto intoilijoille</p>
+      </div>
     </div>
 
-
-    
-    <!-- Features -->
     <section class="features py-5">
-        <div class="container">
-            <div class="p-5 my-4 bg-light rounded-3">
-                <h1>Hieman autoista</h1>
-                <p class="lead">Auto on pyörillä liikkuva henkilöiden ja tavaran kuljetukseen tarkoitettu moottorin voimin liikkuva ajoneuvo.
-                    Nimitys ”auto” on lyhentynyt sanasta automobiili, joka koostuu kreikkalaisesta etuliitteestä άυτο-, áuto-, itse- ja latinan sanasta mobilis, liikkuva.
-    
-                    Autoilla matkustetaan töihin, harrastuspaikoille ja lomakohteisiin. 
-                    Autolla tehdään suuri osa erilaisista kuljetuksista, ja ne palvelevat viranomaisia ja esimerkiksi sodankäyntiä. 
-                    Autoja käytetään myös tiestön kunnossapitoon, kuten auraukseen.</p>
-                <p><a href="https://fi.wikipedia.org/wiki/Auto" target="_blank" class="btn btn-success btn-lg">Lisää autoista</a></p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Autourheilu</h2>
-                    <p>Autourheilu on moottoriurheilun alalaji. Autourheilussa autoilla kilpaillaan nopeudessa ja tarkkuudessa. 
-                        Autourheilussa on useita lajeja, joissa ajetaan erilaisilla autoilla erilaisilla alustoilla.</p>
-                    <p><a href="https://fi.wikipedia.org/wiki/Auto#Autourheilu" target="_blank" class="btn btn-success">Lue
-                            lisää &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Turvallisuus</h2>
-                    <p>Autojen turvallisuus – silloin pikemminkin turvattomuus – nousi yleisen huomion kohteeksi, kun nuori yhdysvaltalainen lakimies Ralph Nader, 
-                        joka ajoi monien liikenneonnettomuuksissa kuolleiden ja loukkaantuneiden asioita, 
-                        julkaisi vuonna 1965 kirjan Unsafe at any speed (Turvaton kaikilla nopeuksilla).
-                    </p>
-                    <p><a href="https://fi.wikipedia.org/wiki/Auto#Turvallisuus-_ja_ymp%C3%A4rist%C3%B6n%C3%A4k%C3%B6kohdat_alkavat_m%C3%A4%C3%A4ritell%C3%A4_auton_kehitt%C3%A4mist%C3%A4" target="_blank"
-                            class="btn btn-success">Lue
-                            lisää &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Ympäristönäkökohdat</h2>
-                    <p> Autojen turvallisuuden ohella myös liikenteen aiheuttama ympäristön saastuminen nousi puheenaiheeksi 1960-luvulla. 
-                        Vuonna 1965 Yhdysvalloissa säädettiin laki puhtaasta ilmasta (Clean Air Act), 
-                        jonka mukaan autojen pakokaasupäästöt oli saatava kuriin vuoden 1968 mallistossa.</p>
-                    <p><a href="https://fi.wikipedia.org/wiki/Auto#Turvallisuus-_ja_ymp%C3%A4rist%C3%B6n%C3%A4k%C3%B6kohdat_alkavat_m%C3%A4%C3%A4ritell%C3%A4_auton_kehitt%C3%A4mist%C3%A4" target="_blank" class="btn btn-success">Lue lisää &raquo;</a>
-                    </p>
-                </div>
-            </div>    
+      <div class="container">
+        <div class="feature-box">
+          <h1>Hieman autoista</h1>
+          <p class="lead">
+            Auto on pyörillä liikkuva henkilöiden ja tavaran kuljetukseen
+            tarkoitettu moottorin voimin liikkuva ajoneuvo. Nimitys ”auto” on
+            lyhentynyt sanasta automobiili, joka koostuu kreikkalaisesta
+            etuliitteestä άυτο-, áuto-, itse- ja latinan sanasta mobilis,
+            liikkuva. Autoilla matkustetaan töihin, harrastuspaikoille ja
+            lomakohteisiin. Autolla tehdään suuri osa erilaisista kuljetuksista,
+            ja ne palvelevat viranomaisia ja esimerkiksi sodankäyntiä. Autoja
+            käytetään myös tiestön kunnossapitoon, kuten auraukseen.
+          </p>
+          <p>
+            <a
+              href="https://fi.wikipedia.org/wiki/Auto"
+              target="_blank"
+              class="btn btn-success btn-lg"
+              >Lisää autoista</a
+            >
+          </p>
         </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card feature-card">
+              <div class="card-body">
+                <h2 class="card-title">Autourheilu</h2>
+                <p class="card-text">
+                  Autourheilu on moottoriurheilun alalajiin jossa
+                  kilpailusuoritus tapahtuu moottorilla varustetulla
+                  kulkuneuvolla. <br />
+                  Moottoreina käytetään esimerkiksi tavallisia
+                  polttomoottoreita, sähkömoottoreita. Autourheilussa autoilla
+                  kilpaillaan nopeudessa ja tarkkuudessa. Autourheilussa on
+                  useita lajeja, joissa ajetaan erilaisilla autoilla erilaisilla
+                  alustoilla.
+                </p>
+                <a
+                  href="https://fi.wikipedia.org/wiki/Auto#Autourheilu"
+                  target="_blank"
+                  class="btn btn-success"
+                  >Lue lisää &raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card feature-card">
+              <div class="card-body">
+                <h2 class="card-title">Turvallisuus</h2>
+                <p class="card-text">
+                  Autojen turvallisuus – silloin pikemminkin turvattomuus –
+                  nousi yleisen huomion kohteeksi, kun nuori yhdysvaltalainen
+                  lakimies Ralph Nader, joka ajoi monien
+                  liikenneonnettomuuksissa kuolleiden ja loukkaantuneiden
+                  asioita, julkaisi vuonna 1965 kirjan Unsafe at any speed
+                  (Turvaton kaikilla nopeuksilla).
+                </p>
+                <a
+                  href="https://fi.wikipedia.org/wiki/Auto#Turvallisuus-_ja_ymp%C3%A4rist%C3%B6n%C3%A4k%C3%B6kohdat_alkavat_m%C3%A4%C3%A4ritell%C3%A4_auton_kehitt%C3%A4mist%C3%A4"
+                  target="_blank"
+                  class="btn btn-success"
+                  >Lue lisää &raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card feature-card">
+              <div class="card-body">
+                <h2 class="card-title">Ympäristönäkökohdat</h2>
+                <p class="card-text">
+                  Autojen turvallisuuden ohella myös liikenteen aiheuttama
+                  ympäristön saastuminen nousi puheenaiheeksi 1960-luvulla.
+                  Vuonna 1965 Yhdysvalloissa säädettiin laki puhtaasta ilmasta
+                  (Clean Air Act), jonka mukaan autojen pakokaasupäästöt oli
+                  saatava kuriin vuoden 1968 mallistossa.
+                </p>
+                <a
+                  href="https://fi.wikipedia.org/wiki/Auto#Turvallisuus-_ja_ymp%C3%A4rist%C3%B6n%C3%A4k%C3%B6kohdat_alkavat_m%C3%A4%C3%A4ritell%C3%A4_auton_kehitt%C3%A4mist%C3%A4"
+                  target="_blank"
+                  class="btn btn-success"
+                  >Lue lisää &raquo;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 AutoMaailma. All rights reserved.</p>
+      <p>&copy; 2024 AutoMaailma. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
