@@ -8,13 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <!-- Clickable logo linking to index.html -->
         <a class="navbar-brand" href="index.html">
           <img
             src="./images/AutoMaailmaLogo_rounded.png"
@@ -49,52 +47,81 @@
       </div>
     </nav>
 
-    <!-- Cool Header -->
     <div class="hero-section">
-      <div class="text-center">
-        <h1>AutoMaailma Yhteydenotto</h1>
-        <p>Täällä voit ottaa meihin yhteyttä!</p>
+        <div class="text-center">
+          <h1>AutoMaailma Yhteydenotto</h1>
+          <p>Täällä voit ottaa meihin yhteyttä!</p>
+        </div>
       </div>
-    </div>
-    <div class="container py-5">
-      <div class="contact-box p-5 my-4 bg-light rounded-4 shadow-lg">
-        <h1 class="mb-4 text-center">Ota Yhteyttä</h1>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nimi</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Nimesi"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Sähköposti</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Sähköpostiosoitteesi"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Viesti</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="5"
-              placeholder="Viestisi"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-success btn-lg w-100">
-            Lähetä
-          </button>
-        </form>
+      <div class="container py-5">
+        <div class="contact-box p-5 my-4 bg-light rounded-4 shadow-lg">
+          <h1 class="mb-4 text-center">Ota Yhteyttä</h1>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nimi</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Nimesi"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Sähköposti</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Sähköpostiosoitteesi"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Viesti</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Viestisi"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg w-100">
+              Lähetä
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
 
-    <!-- Footer -->
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Viesti lähetetty!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          (ei oikeesti)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Sulje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+     <script> document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+        successModal.show(); // Show the modal
+        this.reset();
+      });
+       </script>
+      
+
     <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2024 AutoMaailma. All rights reserved.</p>
     </footer>

@@ -1,42 +1,46 @@
-/* Make the navbar font oblique */
-.navbar, .nav-link {
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    padding-left: 1rem;
-    padding-right: 1rem;
+.navbar {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+.nav-link {
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-
-/* Sticky footer styles */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
- 
+  padding-top: 70px;
 }
 .content {
-  flex: 1; /* Makes the content area grow to fill space */
+  flex: 1;
 }
 footer {
-    
   position: relative;
   bottom: 0;
   width: 100%;
   margin-top: 100px;
 }
-/* Hero Section */
+
 .hero-section {
-  background: url("../images/car_background.avif") no-repeat center
-    center/cover;
+  background: url("../images/car_background.avif") no-repeat center center/cover;
   height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-style: oblique;
+  font-weight: bold;
   text-shadow: 10px 20px 20px rgba(0, 0, 0, 0.7);
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -48,38 +52,35 @@ footer {
   font-weight: bold;
 }
 .hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
-/* Carousel Spacing */
 #carouselExampleCaptions {
-  margin-top: 20px; /* Add spacing below the hero section */
+  margin-top: 20px;
 }
 
 .carousel {
-    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.4); /* Subtle shadow */
-    border-radius: 15px; /* Ensure rounded corners */
-    overflow: hidden; /* Prevent shadow from bleeding */
-    margin-bottom: 50px;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
-/* Gallery Cards Styling */
 .card {
-  border: 1px solid #ddd; /* Light gray border around images */
-  border-radius: 14px; /* Rounded corners for a softer look */
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
 }
 .card:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 20px 25px 25px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 20px 25px 25px rgba(0, 0, 0, 0.4);
 }
 .card img {
-  border-bottom: 1px solid #ddd; /* Border between image and text */
+  border-bottom: 1px solid #ddd;
 }
 
-/* Info Box Styling */
 .info-box {
   margin-top: -30px;
   margin-bottom: 50px;
@@ -98,96 +99,83 @@ footer {
   margin-top: 10px;
 }
 
-/* Center the title box */
 .title-wrapper {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-/* Gallery title styles */
 .gallery-title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-style: oblique;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-/* Card body styles */
 .gallery-card-body {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Card title styles */
 .gallery-card-title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-style: oblique;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-style: oblique;
 }
 
-/* Feature box styling */
 .feature-box {
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 20px; /* Increase roundness */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    padding: 2rem;
-    margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Feature cards styling */
 .feature-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3); /* Card shadow */
-    overflow: hidden; /* Ensure corners apply to all content */
-    background-color: white;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Card body padding for consistent spacing */
 .feature-card .card-body {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
-/* Card title styling */
 .feature-card .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-/* Card text styling */
 .feature-card .card-text {
-    color: #333; /* Neutral text color */
+  color: #333;
 }
 
-/* Button consistency for feature cards */
 .feature-card .btn {
-    border-radius: 30px; /* Make buttons rounded */
+  border-radius: 30px;
 }
 
 .contact-box {
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 40px; /* Rounded corners for a smoother look */
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-    padding: 2rem; /* Internal padding for content spacing */
-    max-width: 800px; /* Optional: Center alignment cap */
-    margin: 0 auto; /* Center the box horizontally */
+  background-color: #f8f9fa;
+  border-radius: 40px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .contact-box h1 {
-    font-weight: 700;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Shadow for header text */
+  font-weight: 700;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
-
-
-
